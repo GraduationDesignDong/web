@@ -1,0 +1,381 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "学生成绩管理系统",
+    "description": "",
+    "version": "1.0.0"
+  },
+  "tags": [
+    {
+      "name": "查询模块"
+    },
+    {
+      "name": "录入模块"
+    }
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "查询学生信息",
+        "x-apifox-folder": "查询模块",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "查询模块"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "学号",
+            "required": false,
+            "example": "1",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "姓名",
+            "required": false,
+            "example": "张三",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "score_of_chinese",
+            "in": "query",
+            "description": "语文成绩",
+            "required": false,
+            "example": "0",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "score_of_english",
+            "in": "query",
+            "description": "英语成绩",
+            "required": false,
+            "example": "0",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "score_of_math",
+            "in": "query",
+            "description": "数学成绩",
+            "required": false,
+            "example": "0",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "score_of_spots",
+            "in": "query",
+            "description": "体育成绩",
+            "required": false,
+            "example": "0",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-ignore-properties": [],
+                  "x-apifox-orders": []
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox": "https://apifox.com/web/project/3104521/apis/api-100220973-run"
+      },
+      "post": {
+        "summary": "新建学生信息",
+        "x-apifox-folder": "录入模块",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "录入模块"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "学号",
+            "required": false,
+            "example": "1",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "姓名",
+            "required": false,
+            "example": "张三",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "score_of_chinese",
+            "in": "query",
+            "description": "语文成绩",
+            "required": false,
+            "example": "0",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "score_of_english",
+            "in": "query",
+            "description": "英语成绩",
+            "required": false,
+            "example": "0",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "score_of_math",
+            "in": "query",
+            "description": "数学成绩",
+            "required": false,
+            "example": "0",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "score_of_spots",
+            "in": "query",
+            "description": "体育成绩",
+            "required": false,
+            "example": "0",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-ignore-properties": [],
+                  "x-apifox-orders": []
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox": "https://apifox.com/web/project/3104521/apis/api-100221082-run"
+      },
+      "delete": {
+        "summary": "删除学生信息",
+        "x-apifox-folder": "录入模块",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "录入模块"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "学号",
+            "required": false,
+            "example": "1",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "姓名",
+            "required": false,
+            "example": "张三",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "score_of_chinese",
+            "in": "query",
+            "description": "语文成绩",
+            "required": false,
+            "example": "0",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "score_of_english",
+            "in": "query",
+            "description": "英语成绩",
+            "required": false,
+            "example": "0",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "score_of_math",
+            "in": "query",
+            "description": "数学成绩",
+            "required": false,
+            "example": "0",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "score_of_spots",
+            "in": "query",
+            "description": "体育成绩",
+            "required": false,
+            "example": "0",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-ignore-properties": [],
+                  "x-apifox-orders": []
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox": "https://apifox.com/web/project/3104521/apis/api-100221094-run"
+      },
+      "put": {
+        "summary": "修改学生信息",
+        "x-apifox-folder": "录入模块",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "录入模块"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "学号",
+            "required": false,
+            "example": "1",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "姓名",
+            "required": false,
+            "example": "张三",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "score_of_chinese",
+            "in": "query",
+            "description": "语文成绩",
+            "required": false,
+            "example": "0",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "score_of_english",
+            "in": "query",
+            "description": "英语成绩",
+            "required": false,
+            "example": "0",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "score_of_math",
+            "in": "query",
+            "description": "数学成绩",
+            "required": false,
+            "example": "0",
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "score_of_spots",
+            "in": "query",
+            "description": "体育成绩",
+            "required": false,
+            "example": "0",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-ignore-properties": [],
+                  "x-apifox-orders": []
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox": "https://apifox.com/web/project/3104521/apis/api-100221117-run"
+      }
+    }
+  },
+  "components": {
+    "schemas": {}
+  },
+  "servers": [
+    {
+      "url": "http://dev-cn.your-api-server.com",
+      "description": "开发环境"
+    }
+  ]
+}
